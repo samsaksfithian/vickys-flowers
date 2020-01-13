@@ -1,12 +1,12 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { useDrag } from 'react-dnd';
-import { ItemTypes } from '../App';
+import { ITEM_TYPES } from '../CONSTANTS';
 import './FlowerItem.scss';
 
 const FlowerItem = () => {
   const [{ is_dragging }, drag_ref] = useDrag({
-    item: { type: ItemTypes.FLOWER },
+    item: { type: ITEM_TYPES.FLOWER },
     collect: monitor => ({
       is_dragging: !!monitor.isDragging(),
       item_info: monitor.getItem(),

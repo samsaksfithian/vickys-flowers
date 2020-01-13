@@ -5,10 +5,6 @@ import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-d
 import { NavBar, Footer, StorePage } from '.';
 import './main.scss';
 
-export const ItemTypes = {
-  FLOWER: 'flower_item',
-};
-
 function App() {
   return (
     <Router>

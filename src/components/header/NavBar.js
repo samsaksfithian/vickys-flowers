@@ -1,7 +1,8 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { useDrop } from 'react-dnd';
-import { ItemTypes } from '../App';
+import { Cart } from '..';
+import { ITEM_TYPES } from '../CONSTANTS';
 import './NavBar.scss';
 
 const doSomething = () => {
@@ -10,7 +11,7 @@ const doSomething = () => {
 
 const NavBar = () => {
   const [{ is_over, can_drop }, drop_ref] = useDrop({
-    accept: ItemTypes.FLOWER,
+    accept: ITEM_TYPES.FLOWER,
     drop: () => doSomething(),
     collect: monitor => ({
       is_over: !!monitor.isOver(),
@@ -24,7 +25,8 @@ const NavBar = () => {
       ref={drop_ref}
       style={is_over && can_drop ? { backgroundColor: 'yellow', opacity: 0.5 } : {}}
     >
-      I am a Nav Bar!
+      <p>I am a Nav Bar!</p>
+      <Cart />
     </header>
   );
 };
