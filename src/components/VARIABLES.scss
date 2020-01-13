@@ -3,6 +3,7 @@
 :root {
   --font: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
 
+  // colors
   --plain-light: #ffffff;
   --plain-dark: #4a4a4a;
   --plain-mid: #bdbdbd;
@@ -14,4 +15,26 @@
   --accent-dark2: #ce1b69;
   --accent-light1: #36ebb9;
   --accent-light2: #6da50a;
+
+  // measurements
+  --side-pad: 6vw;
+  // --side-pad: 80px;
+  --header-height: 56px;
+  --footer-height: 29%;
+  --store-height: calc(100% - var(--header-height) - var(--footer-height));
 }
+
+/*
+Nav bar height: 56px
+Store body height: 578px
+Footer height: 259px
+----------
+Total height = 893px
+nav = ~ 6.27%
+store = ~ 64.73%
+footer = ~ 29%
+
+Page width: 1300px
+
+Side padding: 80px
+*/
