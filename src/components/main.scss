@@ -1,0 +1,21 @@
+@import './VARIABLES.scss';
+/* =========================== RESETS =========================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================== MAIN =========================== */
+
+body {
+  background-color: var(--plain-mid);
+  color: var(--plain-dark);
+  font-family: var(--font);
+  font-size: 17px;
+  height: 100%;
+}
+
+#App {
+  height: 100vh;
+}
