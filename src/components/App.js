@@ -1,20 +1,29 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { DndProvider } from 'react-dnd';
+import BackEndDnD from 'react-dnd-html5-backend';
+import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import { NavBar, Footer, StorePage } from '.';
 import './main.scss';
+
+export const ItemTypes = {
+  FLOWER: 'flower_item',
+};
 
 function App() {
   return (
     <Router>
-      <div id="App">
-        <NavBar />
-        <Switch>
-          <Route path="/">
-            <StorePage />
-          </Route>
-        </Switch>
-        <Footer />
-      </div>
+      <DndProvider backend={BackEndDnD}>
+        <div id="App">
+          <NavBar />
+          <Switch>
+            <Redirect from="/:anything" to="/" />
+            <Route exact path="/">
+              <StorePage />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
+      </DndProvider>
     </Router>
   );
 }

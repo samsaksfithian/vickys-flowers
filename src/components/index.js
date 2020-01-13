@@ -1,8 +1,4 @@
 // ====================================================
-// Main App
-export { default as App } from './App';
-
-// ====================================================
 // Header
 export { default as NavBar } from './header/NavBar';
 
@@ -16,5 +12,6 @@ export { default as LinkColumn } from './footer/LinkColumn';
 
 // Store page
 export { default as StorePage } from './pages-store/StorePage';
+export { default as FlowerItem } from './pages-store/FlowerItem';
 
 // ====================================================
