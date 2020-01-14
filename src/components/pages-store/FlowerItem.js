@@ -6,7 +6,11 @@ import './FlowerItem.scss';
 
 const FlowerItem = () => {
   const [{ is_dragging }, drag_ref] = useDrag({
-    item: { type: ITEM_TYPES.FLOWER },
+    item: {
+      type: ITEM_TYPES.FLOWER,
+      quantity: 1,
+      price: 10,
+    },
     collect: monitor => ({
       is_dragging: !!monitor.isDragging(),
       item_info: monitor.getItem(),
