@@ -1,0 +1,33 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .logo-link {
+    height: 100%;
+
+    .logo {
+      height: 100%;
+      margin-right: 5px;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &.link-item {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0px 15px;
+
+      &.active {
+        color: var(--accent-light1);
+      }
+
+      &:hover {
+        border-bottom: 1px solid var(--accent-main);
+      }
+    }
+  }
+}

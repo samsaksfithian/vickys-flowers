@@ -1,6 +1,7 @@
 import React from 'react';
 import { DndProvider } from 'react-dnd';
 import BackEndDnD from 'react-dnd-html5-backend';
+// TODO: look at Reach Router?
 import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import { NavBar, Footer, StorePage } from '.';
 import './main.scss';
