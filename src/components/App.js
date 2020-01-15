@@ -49,7 +49,6 @@ export default class App extends Component {
    * TODO:
    */
   addItem = item => {
-    console.log('Added item: ', item);
     this.setState(prevState => ({
       total_cost: prevState.total_cost + item.price * item.quantity,
       cart_quantity: prevState.cart_quantity + item.quantity,

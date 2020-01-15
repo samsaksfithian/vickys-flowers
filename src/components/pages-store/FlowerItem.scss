@@ -1,12 +1,16 @@
 .flower-item {
-  background-color: pink;
+  --image-size: 150px;
+  --spacing: 30px;
+
   text-align: center;
-  padding: 4px;
-  margin: 6px;
+  min-width: var(--image-size);
+  width: calc(25% - var(--spacing));
+  margin-right: var(--spacing);
+  margin-top: var(--spacing);
 
   &-image {
     cursor: move;
-    width: 150px;
+    width: var(--image-size);
     margin-bottom: 20px;
   }
 
@@ -21,6 +25,6 @@
   }
 
   &-quantity {
-    margin: 15px 0px;
+    margin-top: 15px;
   }
 }

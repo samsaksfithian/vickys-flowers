@@ -1,5 +1,8 @@
 .nav-bar {
+  position: fixed;
+  top: 0;
   height: var(--header-height);
+  width: 100vw;
   padding: 8px var(--side-pad);
   background-color: var(--theme-color);
   color: var(--plain-light);

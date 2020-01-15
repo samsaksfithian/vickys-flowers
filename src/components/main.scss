@@ -17,5 +17,6 @@ body {
 }
 
 #App {
-  height: 100vh;
+  padding-top: var(--header-height);
+  min-height: 100vh;
 }

@@ -3,8 +3,22 @@
   width: 100%;
   padding: 4vh var(--side-pad);
 
+  .category-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--accent-main);
+    margin-bottom: 11px;
+  }
+
+  .description {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
   .store-items {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 }
