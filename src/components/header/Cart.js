@@ -21,16 +21,22 @@ const Cart = ({ total_cost, quantity, addItem }) => {
   }
 
   return (
-    <div
-      className="cart-block"
-      ref={drop_ref}
-      style={is_over ? { border: '1px dashed hotpink' } : {}}
-    >
+    <div className="cart-block">
       <span className="cart-text">{`TOTAL AMOUNT: $${total_cost}.00`}</span>
       <span className="cart-spacer">|</span>
-      <span className="cart-icon">
-        {/* TODO: figure out when to decrease icon size */}
-        <img className="cart-icon-img" src="/assets/cart@3x.png" alt="Cart" />
+      <span
+        className="cart-icon"
+        style={is_over ? { border: '1px dashed hotpink' } : {}}
+        ref={drop_ref}
+      >
+        <img
+          className="cart-icon-img"
+          src="/assets/cart@2x.png"
+          srcSet="/assets/cart@3x.png 3x,
+                  /assets/cart@2x.png 2x,
+                  /assets/cart@1x.png 1x"
+          alt="Cart"
+        />
         <span className="cart-icon-label" style={{ fontSize }}>
           {quantity}
         </span>

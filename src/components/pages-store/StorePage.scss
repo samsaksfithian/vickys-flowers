@@ -1,4 +1,10 @@
 .store-page {
   height: var(--store-height);
+  width: 100%;
   padding: 4vh var(--side-pad);
+
+  .store-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
