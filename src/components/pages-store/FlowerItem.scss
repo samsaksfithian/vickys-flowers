@@ -1,9 +1,30 @@
 .flower-item {
-  cursor: move;
-  background-color: pink;
-  width: 50px;
-  height: 50px;
+  --image-size: 150px;
+  --spacing: 30px;
+
   text-align: center;
-  padding: 4px;
-  margin: 6px;
+  min-width: var(--image-size);
+  width: calc(25% - var(--spacing));
+  margin-right: var(--spacing);
+  margin-top: var(--spacing);
+
+  &-image {
+    cursor: move;
+    width: var(--image-size);
+    margin-bottom: 20px;
+  }
+
+  &-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  &-price {
+    font-weight: bold;
+    color: var(--accent-main);
+  }
+
+  &-quantity {
+    margin-top: 15px;
+  }
 }
