@@ -1,5 +1,8 @@
 .footer {
-  height: var(--footer-height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
   padding: 4vh var(--side-pad);
   background-color: var(--theme-color);
   color: var(--plain-light);

@@ -1,0 +1,17 @@
+.link-column {
+  margin: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 31px;
+
+  &-title {
+    color: var(--accent-main);
+    font-weight: 800;
+  }
+
+  &-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+}

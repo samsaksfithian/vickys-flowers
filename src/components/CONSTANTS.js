@@ -25,6 +25,36 @@ export const FLOWER_ITEMS = [
   },
 ];
 
+export const FOOTER_LINKS = [
+  {
+    title: 'GET TO KNOW US',
+    links: [
+      { name: 'About Us', link: '/about-us' },
+      { name: 'Careers', link: '/careers' },
+      { name: 'Media', link: '/about-us' },
+      { name: 'Security & Privacy', link: '/security-privacy' },
+    ],
+  },
+  {
+    title: 'LEARN MORE ABOUT',
+    links: [
+      { name: 'Blog', link: '/blog' },
+      { name: 'Find a Florist', link: '/find-florist' },
+      { name: 'Floral Tips & Inspiration', link: '/floral-tips' },
+      { name: 'Sitemap', link: '/sitemap' },
+    ],
+  },
+  {
+    title: `SHOP VICKY'S`,
+    links: [
+      { name: 'Same-Day Flower Delivery', link: '/flowers/delivery-sameday' },
+      { name: 'Birthday Flowers', link: '/flowers/birthday' },
+      { name: 'Funeral & Sympaty Flowers', link: '/flowers/sympaty' },
+      { name: 'International Flower Delivery', link: '/flowers/delivery-international' },
+    ],
+  },
+];
+
 export const MIN_QUANTITY = 1;
 
 export const MAX_QUANTITY = 20;
