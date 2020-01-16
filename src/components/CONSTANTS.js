@@ -49,7 +49,7 @@ export const FOOTER_LINKS = [
     links: [
       { name: 'Same-Day Flower Delivery', link: '/flowers/delivery-sameday' },
       { name: 'Birthday Flowers', link: '/flowers/birthday' },
-      { name: 'Funeral & Sympaty Flowers', link: '/flowers/sympaty' },
+      { name: 'Funeral & Sympathy Flowers', link: '/flowers/sympathy' },
       { name: 'International Flower Delivery', link: '/flowers/delivery-international' },
     ],
   },

@@ -13,7 +13,10 @@ export { default as LinkColumn } from './footer/LinkColumn';
 // Pages
 
 // Store page
-export { default as FlowerItem } from './pages-store/FlowerItem';
-export { default as StorePage } from './pages-store/StorePage';
+export { default as FlowerItem } from './pages/store/FlowerItem';
+export { default as StorePage } from './pages/store/StorePage';
+
+// Not Found page
+export { default as NotFoundPage } from './pages/not-found/NotFoundPage';
 
 // ====================================================
