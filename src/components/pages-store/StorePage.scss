@@ -1,5 +1,6 @@
 .store-page {
-  height: var(--store-height);
+  // height: var(--store-height);
+  flex-grow: 1;
   width: 100%;
   padding: 4vh var(--side-pad);
 
