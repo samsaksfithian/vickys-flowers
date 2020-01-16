@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FLOWER_ITEMS } from '../CONSTANTS';
-import { FlowerItem } from '..';
+import { FLOWER_ITEMS } from '../../CONSTANTS';
+import { FlowerItem } from '../..';
 import './StorePage.scss';
 
 const StorePage = ({ quantities, updateQuantity }) => (

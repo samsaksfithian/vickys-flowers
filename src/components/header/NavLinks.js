@@ -4,7 +4,7 @@ import './NavLinks.scss';
 
 const links = {
   home: '/',
-  'about us': '/about',
+  'about us': '/about-us',
   occasions: '/occasions',
   order: '/order',
 };
@@ -23,7 +23,7 @@ const NavLinks = () => (
       />
     </NavLink>
     {Object.keys(links).map(link => (
-      <NavLink className="link-item" to={links[link]} key={link}>
+      <NavLink exact className="link-item" to={links[link]} key={link}>
         {link.toUpperCase()}
       </NavLink>
     ))}

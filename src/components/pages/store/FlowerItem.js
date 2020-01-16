@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDrag } from 'react-dnd';
-import { ITEM_TYPES, MAX_QUANTITY, MIN_QUANTITY } from '../CONSTANTS';
+import { ITEM_TYPES, MAX_QUANTITY, MIN_QUANTITY } from '../../CONSTANTS';
 import './FlowerItem.scss';
 
 /**

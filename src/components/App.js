@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { DndProvider } from 'react-dnd';
 import BackEndDnD from 'react-dnd-html5-backend';
 // TODO: look at Reach Router?
-import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
-import { NavBar, Footer, StorePage } from '.';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { NavBar, Footer, StorePage, NotFoundPage } from '.';
 import { MIN_QUANTITY, MAX_QUANTITY, FLOWER_ITEMS } from './CONSTANTS';
 import './main.scss';
 
@@ -69,10 +69,10 @@ export default class App extends Component {
               addItem={this.addItem}
             />
             <Switch>
-              <Redirect from="/:anything" to="/" />
               <Route exact path="/">
                 <StorePage quantities={quantities} updateQuantity={this.updateQuantity} />
               </Route>
+              <Route path="/" component={NotFoundPage} />
             </Switch>
             <Footer />
           </div>
