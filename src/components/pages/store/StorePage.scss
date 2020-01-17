@@ -2,7 +2,7 @@
   // height: var(--store-height);
   flex-grow: 1;
   width: 100%;
-  padding: 4vh var(--side-pad);
+  padding: 39px calc(var(--side-pad) - var(--item-spacing) - 2px) 32px var(--side-pad);
 
   .category-title {
     font-size: 30px;
@@ -14,12 +14,43 @@
   .description {
     font-size: 17px;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 23px;
   }
 
   .store-items {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+}
+
+// a lot of this is only necessary because of IE's lack of support for custom properties
+@media only screen and (max-width: 1024px) {
+  .store-page {
+    padding: 30px 30px 30px 60px;
+
+    .description {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .store-page {
+    padding: 25px 20px 25px 40px;
+
+    .description {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .store-page {
+    padding: 20px;
+
+    .description {
+      margin-bottom: 8px;
+    }
   }
 }
