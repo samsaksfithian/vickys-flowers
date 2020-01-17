@@ -1,16 +1,13 @@
 .flower-item {
-  --image-size: 150px;
-  --spacing: 30px;
-
   text-align: center;
-  min-width: var(--image-size);
-  width: calc(25% - var(--spacing));
-  margin-right: var(--spacing);
-  margin-top: var(--spacing);
+  min-width: var(--item-image-size);
+  width: calc(25% - var(--item-spacing));
+  margin-right: var(--item-spacing);
+  margin-top: var(--item-spacing);
 
   &-image {
     cursor: move;
-    width: var(--image-size);
+    width: var(--item-image-size);
     margin-bottom: 20px;
   }
 
