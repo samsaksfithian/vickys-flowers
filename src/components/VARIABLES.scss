@@ -21,6 +21,11 @@
   --header-height: 56px;
   --footer-height: 259px;
   --store-height: calc(100% - var(--header-height) - var(--footer-height));
+
+  // other size variables
+  // (variables must be in :root to be polyfilled for IE compatibility)
+  --item-image-size: 150px;
+  --item-spacing: 30px;
 }
 
 /*
