@@ -11,3 +11,22 @@
   align-items: center;
   justify-content: space-between;
 }
+
+// a lot of this is only necessary because of IE's lack of support for custom properties
+@media only screen and (max-width: 1024px) {
+  .nav-bar {
+    padding: 8px 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    padding: 8px 40px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-bar {
+    padding: 8px 20px;
+  }
+}

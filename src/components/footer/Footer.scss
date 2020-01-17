@@ -3,7 +3,26 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
-  padding: 4vh var(--side-pad);
+  padding: 26px var(--side-pad);
   background-color: var(--theme-color);
   color: var(--plain-light);
+}
+
+// a lot of this is only necessary because of IE's lack of support for custom properties
+@media only screen and (max-width: 1024px) {
+  .footer {
+    padding: 26px 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 18px 40px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer {
+    padding: 10px 20px;
+  }
 }
