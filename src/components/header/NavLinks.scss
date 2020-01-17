@@ -57,20 +57,17 @@
       flex-direction: column;
       top: 100%;
       left: 60%;
+      border: 1px solid var(--plain-light);
 
       &.open {
         display: flex;
       }
 
       a {
-        border: 1px solid var(--plain-light);
         background-color: var(--theme-color);
         padding: 10px;
-
-        &:hover {
-          text-decoration: underline;
-          border-color: var(--accent-main);
-        }
+        width: 100%;
+        margin: 0px;
       }
     }
   }
