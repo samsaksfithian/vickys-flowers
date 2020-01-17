@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { DndProvider } from 'react-dnd';
 import BackEndDnD from 'react-dnd-html5-backend';
-// TODO: look at Reach Router?
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { NavBar, Footer, StorePage, NotFoundPage } from '.';
 import { MIN_QUANTITY, MAX_QUANTITY, FLOWER_ITEMS } from './CONSTANTS';
@@ -23,7 +22,10 @@ export default class App extends Component {
   }
 
   /**
-   * TODO:
+   * A function to randomize the quantities stored in state for the store items.
+   * Generates a quantity for each item from the provided/constant `FLOWER_ITEMS` array
+   * that is a random number between the provided/constant `MAX_QUANTITY` and `MIN_QUANTITY`.
+   * Sets the array of newly generated quantities in `this.state`.
    */
   randomizeQuantities = () => {
     const new_qs = [];
@@ -35,7 +37,11 @@ export default class App extends Component {
   };
 
   /**
-   * TODO:
+   * Updates the quantity value in state for a particular store item. Used to update the
+   * app-wide state quantity stored when a `<select>` dropdown is changed. Updates the
+   * correct quantity and stores in `this.state`
+   * @param {number} new_quantity the new value of the desired quantity
+   * @param {number} index the index of the store item for which the quantity should be changed
    */
   updateQuantity = (new_quantity, index) => {
     this.setState(prevState => {
@@ -46,7 +52,11 @@ export default class App extends Component {
   };
 
   /**
-   * TODO:
+   * Takes in an item object and "adds it to the cart" by updating the cart's total cost 
+   * and quantity accordingly in `this.state`. Then it also randomizes all of the item quantities.
+   * @param {object} item the item object that was added to the cart
+   * @param {number} item.price the price of the item added
+   * @param {number} item.quantity the quantity of the item added
    */
   addItem = item => {
     this.setState(prevState => ({

@@ -22,6 +22,29 @@
   }
 
   &-quantity {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    cursor: pointer;
+    display: block;
+    width: 75px;
+    height: 30px;
+    margin: 0px auto;
     margin-top: 15px;
+    padding: 6px 11px;
+
+    border: 1px solid var(--accent-dark1);
+    background: {
+      size: 16px auto;
+      image: url('/assets/select-arrow@3x.png');
+      repeat: no-repeat;
+      position: 84% center;
+      color: var(--plain-light);
+    }
+    color: var(--plain-dark);
+    font-weight: bold;
+    font-family: var(--font);
   }
 }
