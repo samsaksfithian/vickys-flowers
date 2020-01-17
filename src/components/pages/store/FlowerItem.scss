@@ -22,26 +22,20 @@
   }
 
   &-quantity {
-    margin: {
-      top: 15px;
-      left: auto;
-      right: auto;
-    }
-
-    appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
 
     cursor: pointer;
     display: block;
-    padding: {
-      top: 6px;
-      right: 44px;
-      bottom: 6px;
-      left: 14px;
-    }
-    // 75.6px wide by 30px high
+    width: 75px;
+    height: 30px;
+    margin: 0px auto;
+    margin-top: 15px;
+    padding: 6px 11px;
+
+    border: 1px solid var(--accent-dark1);
     background: {
       size: 16px auto;
       image: url('/assets/select-arrow@3x.png');
@@ -49,8 +43,8 @@
       position: 84% center;
       color: var(--plain-light);
     }
-    border: 1px solid var(--accent-dark1);
     color: var(--plain-dark);
     font-weight: bold;
+    font-family: var(--font);
   }
 }
