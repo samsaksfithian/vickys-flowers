@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavLinks.scss';
 
@@ -9,25 +9,32 @@ const links = {
   order: '/order',
 };
 
-// TODO: maybe change the whole contents of the nav-links div when mobile?
-const NavLinks = () => (
-  <div className="nav-links">
-    <NavLink className="logo-link" to={links.home}>
-      <img
-        className="logo"
-        src="/assets/vicky-logo@2x.png"
-        srcSet="/assets/vicky-logo@3x.png 3x,
+const NavLinks = () => {
+  const [open, toggleOpen] = useState(false);
+  return (
+    <nav className="nav-links">
+      <NavLink className="logo-link" to={links.home}>
+        <img
+          className="logo"
+          src="/assets/vicky-logo@2x.png"
+          srcSet="/assets/vicky-logo@3x.png 3x,
                 /assets/vicky-logo@2x.png 2x,
                 /assets/vicky-logo@1x.png 1x"
-        alt="Vicky's Flowers Logo"
-      />
-    </NavLink>
-    {Object.keys(links).map(link => (
-      <NavLink exact className="link-item" to={links[link]} key={link}>
-        {link.toUpperCase()}
+          alt="Vicky's Flowers Logo"
+        />
       </NavLink>
-    ))}
-  </div>
-);
+      <button className="burger-nav-icon" type="button" onClick={() => toggleOpen(!open)}>
+        &#8801;
+      </button>
+      <div className={`links-container ${open ? 'open' : ''}`}>
+        {Object.keys(links).map(link => (
+          <NavLink exact className="link-item" to={links[link]} key={link}>
+            {link.toUpperCase()}
+          </NavLink>
+        ))}
+      </div>
+    </nav>
+  );
+};
 
 export default NavLinks;
