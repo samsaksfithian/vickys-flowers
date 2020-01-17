@@ -5,6 +5,6 @@ import ReactDOM from 'react-dom';
 import cssVars from 'css-vars-ponyfill';
 import App from './components/App';
 
-cssVars({ onlyLegacy: true });
+cssVars({ onlyLegacy: false });
 
 ReactDOM.render(<App />, document.getElementById('root'));

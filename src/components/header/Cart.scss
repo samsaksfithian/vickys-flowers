@@ -13,6 +13,8 @@
   .cart-icon {
     position: relative;
     height: 30px;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-out;
 
     &-img {
       height: 100%;
