@@ -5,7 +5,10 @@ import { ITEM_TYPES, MAX_QUANTITY, MIN_QUANTITY } from '../../CONSTANTS';
 import './FlowerItem.scss';
 
 /**
- * TODO:
+ * Programmatically creates JSX `<option ...>` elements to fill in
+ * the item's select dropdown input. Does this programmatically so that
+ * the quantity can be changed easily.
+ * @returns {Array<JSX.Element>} an array of the JSX `<option>` elements
  */
 const fillOptionValues = () => {
   const options = [];
