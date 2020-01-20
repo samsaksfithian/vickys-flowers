@@ -46,6 +46,10 @@
     color: var(--plain-dark);
     font-weight: bold;
     font-family: var(--font);
+    
+    &::-ms-expand {
+      display: none;
+    }
   }
 }
 
